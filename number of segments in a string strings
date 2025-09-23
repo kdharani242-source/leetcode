@@ -1,0 +1,10 @@
+class Solution:
+    def countSegments(self, s: str) -> int:
+        a=len(s);
+        c=0;
+        for i in range(a):
+            if(s[i]!=" " and (i==0 or s[i-1]==" ")):
+                c+=1
+        return c
+
+        
